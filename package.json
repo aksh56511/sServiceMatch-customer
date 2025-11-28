@@ -1,10 +1,11 @@
 {
-  "name": "sservicematch-customer",
+  "name": "fixora-customer",
   "version": "1.0.0",
-  "description": "Customer interface for professional service booking app",
+  "description": "Customer interface for Fixora professional service booking app",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3000 react-scripts start",
+    "start:customer": "PORT=3000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

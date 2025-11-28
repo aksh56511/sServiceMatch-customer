@@ -88,7 +88,6 @@ A modern React.js application for booking professional services, similar to Uber
 1. **Clone the repository**
    ```bash
    git clone https://github.com/aksh56511/sServiceMatch-customer.git
-   cd sServiceMatch-customer
    ```
 
 2. **Install dependencies**

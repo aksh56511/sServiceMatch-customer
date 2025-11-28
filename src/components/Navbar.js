@@ -18,7 +18,7 @@ function Navbar({ user, onLogout }) {
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="brand-link">
-            ServiceMatch
+            Fixora
           </Link>
         </div>
 
@@ -26,6 +26,7 @@ function Navbar({ user, onLogout }) {
           <>
             <div className="navbar-menu">
               <Link to="/" className="nav-link">Home</Link>
+              <Link to="/book-service" className="nav-link">Book Service</Link>
               <Link to="/professionals" className="nav-link">Find Professionals</Link>
               <Link to="/bookings" className="nav-link">My Bookings</Link>
               <Link to="/report-problem" className="nav-link">
@@ -52,6 +53,9 @@ function Navbar({ user, onLogout }) {
               <div className="mobile-menu">
                 <Link to="/" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
                   Home
+                </Link>
+                <Link to="/book-service" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+                  Book Service
                 </Link>
                 <Link to="/professionals" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
                   Find Professionals

@@ -9,6 +9,7 @@ import BookingPage from './components/BookingPage';
 import BookingHistory from './components/BookingHistory';
 import ProblemReport from './components/ProblemReport';
 import ChatBox from './components/ChatBox';
+import BookService from './components/BookService';
 import './App.css';
 
 function App() {
@@ -57,6 +58,10 @@ function App() {
             <Route 
               path="/" 
               element={user ? <Home /> : <Navigate to="/login" />} 
+            />
+            <Route 
+              path="/book-service" 
+              element={user ? <BookService user={user} /> : <Navigate to="/login" />} 
             />
             <Route 
               path="/professionals" 
